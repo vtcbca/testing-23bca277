@@ -1,0 +1,21 @@
+#include<iostream.h>
+#include<conio.h>
+#include<conio.h>
+int main()
+{
+	clrscr();
+	cout<<"-------biodata-------";
+	cout<<"Name      : Affu";
+	cout<<end;
+	cout<<"dob       : 08/06/2006;
+	cout<<end;
+	cout<<"mother    : Anisha";
+	cout<<end;
+	cout<<"Father    : Mo.Firoj";
+	cout<<end;
+	cout<<"mobile No :9106612950";
+	cout<<end;
+	cout<<" city     : surat";
+	cout<<end
+	getch();
+}
