@@ -1,0 +1,32 @@
+ .open marksheet
+sqlite> create table if not exists result
+   ...> (student_id int primary key,student_name,WD,python,stat,oop,iks);
+sqlite> insert into result values(101,'alfiya',45,44,41,40,39),
+   ...> (102,'neha',35,39,45,34,33),
+   ...> (103,'fozi',39,41,35,34,33),
+   ...> (104,'mahhu',39,31,25,24,33),
+   ...> (105,'ab',39,31,25,24,33),
+   ...> (106,'khushi',35,340,35,25,35),
+   ...> (107,'aayshi',38,29,35,25,35),
+   ...> (108,'affu',32,25,45,25,35),
+   ...> (109,'tannu',27,28,25,22,45),
+   ...> (110,'shiddhu',38,38,45,42,45);
+sqlite> .mode box
+sqlite> select * from result;
+┌────────────┬──────────────┬────┬────────┬──────┬─────┬─────┐
+│ student_id │ student_name │ WD │ python │ stat │ oop │ iks │
+├────────────┼──────────────┼────┼────────┼──────┼─────┼─────┤
+│ 101        │ alfiya       │ 45 │ 44     │ 41   │ 40  │ 39  │
+│ 102        │ neha         │ 35 │ 39     │ 45   │ 34  │ 33  │
+│ 103        │ fozi         │ 39 │ 41     │ 35   │ 34  │ 33  │
+│ 104        │ mahhu        │ 39 │ 31     │ 25   │ 24  │ 33  │
+│ 105        │ ab           │ 39 │ 31     │ 25   │ 24  │ 33  │
+│ 106        │ khushi       │ 35 │ 340    │ 35   │ 25  │ 35  │
+│ 107        │ aayshi       │ 38 │ 29     │ 35   │ 25  │ 35  │
+│ 108        │ affu         │ 32 │ 25     │ 45   │ 25  │ 35  │
+│ 109        │ tannu        │ 27 │ 28     │ 25   │ 22  │ 45  │
+│ 110        │ shiddhu      │ 38 │ 38     │ 45   │ 42  │ 45  │
+└────────────┴──────────────┴────┴────────┴──────┴─────┴─────┘
+sqlite> .mode column
+sqlite> .mode csv
+sqlite> .output C:/Users/Admin/OneDrive/Desktop/sem-3/python/csv/result.csv
